@@ -1,0 +1,32 @@
+{
+  "name": "gulp-frontend-starter-project",
+  "version": "1.0.0",
+  "description": "Gulp frontend starter project",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtyomSklv/gulp-frontend-starter-project.git"
+  },
+  "author": "Artem Sokolov (@artyomsklv)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArtyomSklv/gulp-frontend-starter-project/issues"
+  },
+  "homepage": "https://github.com/ArtyomSklv/gulp-frontend-starter-project#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.1",
+    "imagemin-pngquant": "^6.0.0"
+  }
+}
