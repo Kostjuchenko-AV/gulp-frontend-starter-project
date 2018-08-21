@@ -6,6 +6,21 @@
 
 @import 'variables';
 
+// Title
+//
+// Simple title
+//
+// Markup: <h1 class="welcome-title {{modifier_class}}">Hello, World!</h1>
+//
+// .welcome-title--center - Center alignment modifier class
+// .welcome-title--right - Right alignment modifier class
+//
+// Styleguide Components.Typography
 .welcome-title {
-	text-align: center;
+	&--center {
+		text-align: center;
+	}
+	&--right {
+		text-align: right;
+	}
 }
