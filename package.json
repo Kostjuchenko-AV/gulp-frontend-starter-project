@@ -6,16 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ArtyomSklv/gulp-frontend-starter-project.git"
-  },
-  "author": "Artem Sokolov (@artyomsklv)",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ArtyomSklv/gulp-frontend-starter-project/issues"
-  },
-  "homepage": "https://github.com/ArtyomSklv/gulp-frontend-starter-project#readme",
   "devDependencies": {
     "browser-sync": "^2.24.6",
     "del": "^3.0.0",
