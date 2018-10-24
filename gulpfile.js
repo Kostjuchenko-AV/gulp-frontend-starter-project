@@ -37,6 +37,12 @@ var concat = require('gulp-concat');
 // KSS
 var kss = require('kss');
 
+// Webpack stream
+var webpackStream = require('webpack-stream');
+
+// Webpack config
+const webpackConfig = require('./webpack.config');
+
 gulp.task('clean', function() {
 	return del.sync('dist');
 });
@@ -77,7 +83,9 @@ gulp.task('images', function() {
 });
 
 gulp.task('js', function() {
-	return gulp.src('./src/js/**/*')      
+	return gulp.src('./src/js/main.js')
+	.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
+	.pipe(webpackStream(webpackConfig))
 	.pipe(gulp.dest('./dist/js'))
 	.pipe(browserSync.reload({stream: true}));
 });

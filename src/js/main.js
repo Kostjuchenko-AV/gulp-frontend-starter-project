@@ -1,1 +1,3 @@
-alert('Hello, world! Remove me!');
+import module from './module'
+
+module();
